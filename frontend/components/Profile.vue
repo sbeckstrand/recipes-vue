@@ -3,10 +3,10 @@
 
     <!-- Profile Information -->
     <section class="section">
-        <h1 class="title">{{ $auth.user.first_name }} {{ $auth.user.last_name }}</h1>
+        <h1 class="title">{{ editableUser.first_name }} {{ editableUser.last_name }}</h1>
 
-        <p>User ID: {{ $auth.user.pk }}</p>
-        <p>Email: {{ $auth.user.email }}</p>
+        <p>User ID: {{ editableUser.id }}</p>
+        <p>Email: {{ editableUser.email }}</p>
         <p>Favorited {{ favoriteCount }} times</p>
 
         <!-- Should include a Date Joined -->
@@ -43,7 +43,11 @@ export default {
     user: {
       handler (user) {
         if (user) {
+          console.log(user)
           this.editableUser = user
+          if (this.user.pk) {
+            this.editableUser.id = user.pk
+          }
         }
       },
       deep: true,

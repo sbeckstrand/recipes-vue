@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav />
-    <Profile :profile="$auth.user"/>
+    <Profile :user="$auth.user"/>
   </div>
   
 </template>

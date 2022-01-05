@@ -8,8 +8,8 @@ class RecipeSerializer(serializers.ModelSerializer):
         model = Recipe
         fields = ("id", "name", "ingredients", "picture", "difficulty", "prep_time", "cook_time", "guide")
 
-class UserSerializer(serializers.Serializer):
+class UserSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = User
-        fields = ('username', 'email', 'id', 'first_name', 'last_name')
+        fields = ("id", "username", "email", "first_name", "last_name")

@@ -22,7 +22,7 @@
 
             <template #end>
                 <div v-if="authenticated">
-                    <b-navbar-item tag="authed-buttons-div">
+                    <b-navbar-item tag="div">
                         <div class="buttons">
                             <a href="/profile" class="button is-primary">Profile</a>
                             <a class="button is-light" @click="logout()">Logout</a>
@@ -30,7 +30,7 @@
                     </b-navbar-item>
                 </div>
                 <div v-else>
-                    <b-navbar-item tag="login-div">
+                    <b-navbar-item tag="span">
                         <div class="buttons">
                             <a class="button is-primary" @click="loginWithGoogle()">Log in</a>
                         </div>
