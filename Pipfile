@@ -12,6 +12,7 @@ dj-rest-auth = "*"
 django-allauth = "*"
 djangorestframework-simplejwt = "*"
 pyjwt = "*"
+python-dotenv = "*"
 
 [dev-packages]
 django = "*"
