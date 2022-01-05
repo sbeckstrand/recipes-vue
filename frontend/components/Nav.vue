@@ -2,7 +2,7 @@
     <div class="container">
         <b-navbar>
             <template #brand>
-                <b-navbar-item tag="router-link" :to="{ path: '/' }">
+                <b-navbar-item href="/">
                     <b-icon
                         pack="fas"
                         icon="leaf"
