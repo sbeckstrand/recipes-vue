@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav />
     <Profile :user="$auth.user"/>
   </div>
   

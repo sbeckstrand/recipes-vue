@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav />
     <Profile :user="user"/>
   </div>
   
